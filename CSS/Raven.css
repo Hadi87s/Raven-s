@@ -20,6 +20,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin:0;
 }
 
 body {
@@ -144,25 +145,24 @@ body {
     width: 100%;
 }
 
+.header .Links {
+    position: relative; /*without this the list was not good in terms of responsive design, this is super important*/
+}
+
 .header .Links ul {
     list-style: none;
     margin-right: 15px;
     padding: 0;
     background-color: var(--secondary-color);
     position: absolute;
-    right:170px;
-    top:calc(7% + 5px);
+    right: -20px;
+    top: calc(10% + 33px);
     min-width: 200px;
     opacity: 0;
     visibility: hidden;
     z-index: 1;
     transition: 0.3s;
 }
-@media (max-width:790px){
-    .header .Links ul{
-        right:0;
-    }
-   }
 
 .header .Links:hover ul {
     display:block;
@@ -274,12 +274,14 @@ body {
 .services .content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px,1fr));
-    grid-gap:70px;
-    margin: 60px auto;
+    grid-gap:50px;
+    margin: 60px auto 0;
 }
 
 .services .content .serv {
     display: flex;
+    line-height: 1.4;
+    height:120px;
 }
 .services .content .serv i{
     flex-basis: 60px;
@@ -296,11 +298,10 @@ body {
 .services .content .serv .text h3{
     margin:0 0 10px;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     .services .content .serv {
         flex-direction: column;
-        text-align: center;
-        line-height: 1.4;
+        text-align:center;
     }
     .services .content {
         grid-gap:30px;
@@ -319,7 +320,7 @@ background-color: var(--secondary-color);
 
 .portfolio .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
     grid-gap:30px;
     margin:var(--service-padding) auto 0;
 }
@@ -328,6 +329,9 @@ background-color: var(--secondary-color);
     background-color: white;
     border-radius: 14px;
     transition: 0.3s;
+    height: 344.5px;
+    max-width: 446px;
+
 }
 .portfolio .card:hover{
     transform: scale(1.04);
