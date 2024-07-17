@@ -329,10 +329,10 @@ background-color: var(--secondary-color);
     background-color: white;
     border-radius: 14px;
     transition: 0.3s;
-    height: 344.5px;
+    height: 100%;
     max-width: 446px;
-
 }
+
 .portfolio .card:hover{
     transform: scale(1.04);
 }
