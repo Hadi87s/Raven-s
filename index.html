@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,50 +12,53 @@
     <!-- Work sans font imported from google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome Library -->
-     <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
 
 </head>
+
 <body>
     <!-- Start of the header -->
-     <div class="header"> 
+    <div class="header">
         <div class="container">
             <i class="fa-solid fa-crow logo"></i>
 
             <p>Raven</p>
-            <div class="Links">
+            <div class="Links" id="bars">
                 <span class="icons">
                     <span></span>
                     <span></span>
                     <span></span>
                 </span>
-                <ul>
+                <ul id="selection-window">
                     <li><a href="#Services">Services</a></li>
                     <li><a href="#Portfolio">Portfolio</a></li>
                     <li><a href="#Contact">Contact</a></li>
                 </ul>
             </div>
         </div>
-     </div>
-     <!-- End of the header -->
-     <!-- ------------------------------------------------------------------------------------------ -->
-     <!-- Start of the Landing -->
-      <div class="landing">
+    </div>
+    <!-- End of the header -->
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <!-- Start of the Landing -->
+    <div class="landing">
         <div class="into-text">
             <h1>Raven Industries</h1>
             <p>Explore my work and skills in software development and web design</p>
-       </div>
-      </div>
-     <!-- End of the Landing -->
-      <!-- ------------------------------------------------------------------------------------------ -->
-      <!-- Start of Features -->    
-      <div class="features">
+        </div>
+    </div>
+    <!-- End of the Landing -->
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <!-- Start of Features -->
+    <div class="features">
         <div class="container1">
             <div class="feat">
                 <i class="fa-solid fa-mobile-screen" style="font-size: 40px;"></i>
                 <h3>Responsive Design</h3>
-                <p>Ensuring that web applications look great and function flawlessly on devices of all sizes and resolutions.</p>
+                <p>Ensuring that web applications look great and function flawlessly on devices of all sizes and
+                    resolutions.</p>
             </div>
             <div class="feat">
                 <i class="fa-solid fa-tachometer-alt" style="font-size: 40px;"></i>
@@ -64,124 +68,136 @@
             <div class="feat">
                 <i class="fa-solid fa-globe" style="font-size: 40px;"></i>
                 <h3>Cross-Browser Compatibility</h3>
-                <p>Developing web applications that work seamlessly across all major web browsers, ensuring a consistent user experience.</p>
+                <p>Developing web applications that work seamlessly across all major web browsers, ensuring a consistent
+                    user experience.</p>
             </div>
         </div>
-      </div>
-      <!-- End of Features -->    
-      <!-- ------------------------------------------------------------------------------------------ -->
-      <!-- Start of Services -->
+    </div>
+    <!-- End of Features -->
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <!-- Start of Services -->
 
-      <div class="services" id="Services">
+    <div class="services" id="Services">
         <!-- Heading part -->
-            <h2 class="special-heading">Services</h2>
-            <p>Don't be busy, be productive</p>
+        <h2 class="special-heading">Services</h2>
+        <p>Don't be busy, be productive</p>
         <!-- Services content -->
-            <div class="content container">
-                <!-- First Column  -->
-                <div class="col">
-                    <div class="serv"> <!--This is the first service, it will containt the icon, and the div having the heading the the paragraph-->
-                        <i class="fa-solid fa-window-maximize"></i>
-                        <div class="text">
-                            <h3>Web design</h3>
-                            <p>Creating beautiful and responsive websites tailored to your needs.</p>
-                        </div>
-                    </div>
-                    <div class="serv"> <!--This is the second service, it will containt the icon, and the div having the heading the the paragraph-->
-                        <i class="fa-solid fa-code"></i>
-                        <div class="text">
-                            <h3>Software Development</h3>
-                            <p>Developing robust software solutions using C++, Java, and more.</p>                        </div>
+        <div class="content container">
+            <!-- First Column  -->
+            <div class="col">
+                <div class="serv">
+                    <!--This is the first service, it will containt the icon, and the div having the heading the the paragraph-->
+                    <i class="fa-solid fa-window-maximize"></i>
+                    <div class="text">
+                        <h3>Web design</h3>
+                        <p>Creating beautiful and responsive websites tailored to your needs.</p>
                     </div>
                 </div>
-                
-                <!-- Second Column -->
-                <div class="col">
-                    <div class="serv"> <!--This is the third service, it will containt the icon, and the div having the heading the the paragraph-->
-                        <i class="fa-solid fa-window-maximize"></i>
-                        <div class="text">
-                            <h3>Digital Content</h3>
-                            <p>Creating engaging digital content for various platforms, Specially for Instgram and Facebook.</p>
-                        </div>
-                    </div>
-
-                    <div class="serv"> <!--This is the fourth service, it will containt the icon, and the div having the heading the the paragraph-->
-                        <i class="fa-solid fa-database"></i>
-                        <div class="text">
-                            <h3>Database Management</h3>
-                            <p>Designing and managing efficient databases using SQL.</p>
-                        </div>
+                <div class="serv">
+                    <!--This is the second service, it will containt the icon, and the div having the heading the the paragraph-->
+                    <i class="fa-solid fa-code"></i>
+                    <div class="text">
+                        <h3>Software Development</h3>
+                        <p>Developing robust software solutions using C++, Java, and more.</p>
                     </div>
                 </div>
-
             </div>
-      </div>
 
-
-      <!-- End of Services -->
-       <!-- Start of Portfolio -->
-       <div class="portfolio" id="Portfolio">
-        <!-- Heading part -->
-            <h2 class="special-heading">Portfolio</h2>
-            <p>If you do it right, it will last for ever</p>
-        <!-- Services content -->
-            <div class="portfolio-content container">
-
-                <div class="card">
-                    <div class="image">
-                        <img src="Images/Portfolio1.jpg" alt="">
+            <!-- Second Column -->
+            <div class="col">
+                <div class="serv">
+                    <!--This is the third service, it will containt the icon, and the div having the heading the the paragraph-->
+                    <i class="fa-solid fa-window-maximize"></i>
+                    <div class="text">
+                        <h3>Digital Content</h3>
+                        <p>Creating engaging digital content for various platforms, Specially for Instgram and Facebook.
+                        </p>
                     </div>
+                </div>
+
+                <div class="serv">
+                    <!--This is the fourth service, it will containt the icon, and the div having the heading the the paragraph-->
+                    <i class="fa-solid fa-database"></i>
+                    <div class="text">
+                        <h3>Database Management</h3>
+                        <p>Designing and managing efficient databases using SQL.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- End of Services -->
+    <!-- Start of Portfolio -->
+    <div class="portfolio" id="Portfolio">
+        <!-- Heading part -->
+        <h2 class="special-heading">Portfolio</h2>
+        <p>If you do it right, it will last for ever</p>
+        <!-- Services content -->
+        <div class="portfolio-content container">
+
+            <div class="card">
+                <div class="image">
+                    <img src="Images/Portfolio1.jpg" alt="">
+                </div>
                 <div class="info">
                     <h3>Car Management System</h3>
                     <p>Database Car Management system using Postgres SQL integrated with Java Maven user interface.</p>
                 </div>
-                </div>
+            </div>
 
-                <div class="card">
-                    <div class="image">
-                        <img src="Images/Portfolio2.jpg" alt="">
-                    </div>
+            <div class="card">
+                <div class="image">
+                    <img src="Images/Portfolio2.jpg" alt="">
+                </div>
                 <div class="info">
                     <h3>Pixel Reveal Project</h3>
-                    <p>A Python project where users reveal parts of an image based on their social media follower count.</p>
+                    <p>A Python project where users reveal parts of an image based on their social media follower count.
+                    </p>
                 </div>
-                </div>
+            </div>
 
-                <div class="card">
-                    <div class="image">
-                        <img src="Images/Portfolio3.jpg" alt="">
-                    </div>
+            <div class="card">
+                <div class="image">
+                    <img src="Images/Portfolio3.jpg" alt="">
+                </div>
                 <div class="info">
                     <h3>More Projects Coming Soon</h3>
                     <p>Stay tuned for more exciting projects.</p>
                 </div>
-                </div>
             </div>
-      </div>
-       <!-- End of Portfolio -->
-      <!-- Start Contact -->
-       <div class="contact" id="Contact">
-                <h2 class="special-heading">Contact</h2>
-                <p>We are born to create</p>
-                <div class="contact-content">
-                    <p class="label">
-                        Feel free to drop us a line at:
-                    </p>
-                    <a href="mailto:HadiIrshaid8722@gmail.com?subject=Contact" class="link">HadiIrshaid8722@gmail.com</a>
-                    <div class="socials">
-                        Find Us on social Networks
-                        <a href="https://www.facebook.com/profile.php?id=61554540375072"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/itsnewhadi107/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://github.com/Hadi87s"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/hadi-irshaid-345386319/"><i class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-       </div>
-      <!-- End Contact -->
-       <!-- Footer  -->
-        <div class="footer">
-            &copy;2024 - <span>Hadi</span>, All Rights Are Reserved.
         </div>
+    </div>
+    <!-- End of Portfolio -->
+    <!-- Start Contact -->
+    <div class="contact" id="Contact">
+        <h2 class="special-heading">Contact</h2>
+        <p>We are born to create</p>
+        <div class="contact-content">
+            <p class="label">
+                Feel free to drop us a line at:
+            </p>
+            <a href="mailto:HadiIrshaid8722@gmail.com?subject=Contact" class="link">HadiIrshaid8722@gmail.com</a>
+            <div class="socials">
+                Find Us on social Networks
+                <a href="https://www.facebook.com/profile.php?id=61554540375072"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/itsnewhadi107/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Hadi87s"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hadi-irshaid-345386319/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- End Contact -->
+    <!-- Footer  -->
+    <div class="footer">
+        &copy;2024 - <span>Hadi</span>, All Rights Are Reserved.
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
